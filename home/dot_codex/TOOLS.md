@@ -16,6 +16,7 @@ Current state verified on 2026-04-10.
 | `jq` | Command-line JSON parser and transformer. Installed: `jq 1.8.1`. | `jq --help` | Replace `/Users/jake/bin/jq` from the latest `jqlang/jq` macOS arm64 release asset. |
 | `just` | Command runner for project-specific task recipes. Installed: `just 1.49.0`. | `just --help` | Replace `/Users/jake/bin/just` from the latest `casey/just` macOS arm64 release asset. |
 | `rg` | Fast recursive text search tool from ripgrep. Installed: `ripgrep 15.1.0`. | `rg --help` | Replace `/Users/jake/bin/rg` from the latest `BurntSushi/ripgrep` macOS arm64 release asset. |
+| `tmux` | Terminal multiplexer for persistent sessions, panes, and windows. Installed: `tmux 3.6a`. | `tmux -h` | Replace `/Users/jake/bin/tmux` from the latest `tmux/tmux-builds` macOS arm64 release asset. |
 | `uv` | Python package and project manager with fast virtualenv and tool workflows. Installed: `uv 0.11.6`. | `uv --help` | Replace `/Users/jake/bin/uv` from the latest `astral-sh/uv` macOS arm64 release asset. |
 | `xh` | Friendly HTTP client for APIs and web services. Installed: `xh 0.25.3`. | `xh --help` | Replace `/Users/jake/bin/xh` from the latest `ducaale/xh` macOS arm64 release asset. |
 | `yq` | Command-line YAML, JSON, and structured data processor. Installed: `yq v4.52.5`. | `yq --help` | Replace `/Users/jake/bin/yq` from the latest `mikefarah/yq` macOS arm64 release asset. |
