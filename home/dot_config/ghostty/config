@@ -1,0 +1,3 @@
+# Keep this minimal until usage patterns settle.
+theme = light:GitHub Light,dark:GitHub Dark
+font-size = 14
