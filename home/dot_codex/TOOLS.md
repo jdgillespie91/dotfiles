@@ -12,7 +12,7 @@ Current state verified on 2026-04-10.
 | `delta` | Syntax-highlighted pager for `git diff`, `git show`, and patch output. Installed: `delta 0.19.2`. | `delta --help` | Replace `/Users/jake/bin/delta` from the latest `dandavison/delta` macOS arm64 release asset. |
 | `fd` | Fast, user-friendly alternative to `find`. Installed: `fd 10.4.2`. | `fd --help` | Replace `/Users/jake/bin/fd` from the latest `sharkdp/fd` macOS arm64 release asset. |
 | `fzf` | Fuzzy finder for shell history, files, and interactive selection. Installed: `fzf 0.71.0`. | `fzf --help` | Replace `/Users/jake/bin/fzf` from the latest `junegunn/fzf` macOS arm64 release asset. |
-| `gh` | GitHub CLI for repositories, issues, pull requests, and auth. Installed: `gh 2.83.2`. | `gh --help` | Replace `/Users/jake/bin/gh` from the latest `cli/cli` macOS arm64 release asset. |
+| `gh` | GitHub CLI for repositories, issues, pull requests, and auth. Installed: `gh 2.89.0`. | `gh --help` | Replace `/Users/jake/bin/gh` from the latest `cli/cli` macOS arm64 release asset. |
 | `jq` | Command-line JSON parser and transformer. Installed: `jq 1.8.1`. | `jq --help` | Replace `/Users/jake/bin/jq` from the latest `jqlang/jq` macOS arm64 release asset. |
 | `just` | Command runner for project-specific task recipes. Installed: `just 1.49.0`. | `just --help` | Replace `/Users/jake/bin/just` from the latest `casey/just` macOS arm64 release asset. |
 | `rg` | Fast recursive text search tool from ripgrep. Installed: `ripgrep 15.1.0`. | `rg --help` | Replace `/Users/jake/bin/rg` from the latest `BurntSushi/ripgrep` macOS arm64 release asset. |
