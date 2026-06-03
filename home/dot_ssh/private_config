@@ -5,3 +5,11 @@ Host github.com
   IdentitiesOnly yes
   AddKeysToAgent yes
   UseKeychain yes
+
+Host mac-mini
+  HostName mac-mini
+  User jake
+  IdentityFile ~/.ssh/id_ed25519
+  IdentitiesOnly yes
+  AddKeysToAgent yes
+  UseKeychain yes

@@ -1,0 +1,18 @@
+format = '$directory$git_branch$character'
+
+add_newline = false
+
+[directory]
+format = '[$path]($style) '
+style = 'bold cyan'
+truncation_length = 4
+truncate_to_repo = false
+read_only = ' ro'
+
+[git_branch]
+format = '[git:$branch]($style) '
+style = 'bold #cba6f7'
+
+[character]
+success_symbol = '[>](bold green)'
+error_symbol = '[>](bold red)'
