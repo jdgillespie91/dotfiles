@@ -10,21 +10,22 @@ from official release binaries and documented in `~/.codex/TOOLS.md`.
 
 | Source | Target | Purpose |
 | --- | --- | --- |
-| `home/dot_zshrc` | `~/.zshrc` | zsh PATH, Starship init, nvm, SSH compatibility wrapper |
+| `home/dot_zshrc.tmpl` | `~/.zshrc` | machine-specific zsh PATH and shell integrations |
 | `home/dot_gitconfig` | `~/.gitconfig` | Git identity, Hunk pager, diff and merge settings |
 | `home/dot_tmux.conf` | `~/.tmux.conf` | tmux ergonomics, clipboard, Ghostty RGB, Catppuccin status bar |
 | `home/dot_config/ghostty/config` | `~/.config/ghostty/config` | Ghostty Catppuccin theme, JetBrainsMono Nerd Font, Option-as-Alt |
 | `home/dot_config/starship.toml` | `~/.config/starship.toml` | compact prompt: cwd, git branch, prompt character |
 | `home/dot_config/nvim/init.lua` | `~/.config/nvim/init.lua` | Neovim config, plugins, LSP, formatting, linting |
 | `home/dot_codex/AGENTS.md` | `~/.codex/AGENTS.md` | Codex user preferences |
-| `home/dot_codex/TOOLS.md` | `~/.codex/TOOLS.md` | local CLI inventory and update notes |
-| `home/dot_codex/private_config.toml` | `~/.codex/config.toml` | Codex approval/sandbox defaults and trusted workspace |
+| `home/dot_codex/TOOLS.md.tmpl` | `~/.codex/TOOLS.md` | machine-specific CLI inventory and update notes |
+| `home/dot_codex/private_config.toml.tmpl` | `~/.codex/config.toml` | Codex approval/sandbox defaults and trusted workspace |
 | `home/dot_ssh/private_config` | `~/.ssh/config` | SSH host config |
 
 ## Manual installs
 
-Installed binaries live in `~/bin`. Prefer direct official release binaries over
-Homebrew. When adding or updating a CLI, update `home/dot_codex/TOOLS.md`.
+Commands are exposed through `~/bin`. Prefer direct official release binaries
+over Homebrew. When adding or updating a CLI, update
+`home/dot_codex/TOOLS.md.tmpl`.
 
 Current notable manual installs include:
 
