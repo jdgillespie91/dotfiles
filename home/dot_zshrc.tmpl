@@ -1,0 +1,68 @@
+{{- if eq (.tools.profile | default "") "mac-mini" -}}
+# Add personal bin directory to PATH
+export PATH="$HOME/bin:$PATH"
+
+# go
+export PATH="$HOME/go/bin:$PATH"
+
+# Initialize Starship prompt
+eval "$(starship init zsh)"
+
+# Alias for Tailscale command line tool
+alias tailscale="/Applications/Tailscale.app/Contents/MacOS/Tailscale"
+
+# tmux local installation
+# DYLD_LIBRARY_PATH: Tells macOS where to find shared libraries (.dylib files) for tmux
+export DYLD_LIBRARY_PATH=$HOME/local/lib:$DYLD_LIBRARY_PATH
+# MANPATH: Specifies directories where the man command looks for manual pages
+export MANPATH=$HOME/local/share/man:$MANPATH
+
+# Added by Antigravity
+export PATH="/Users/jake/.antigravity/antigravity/bin:$PATH"
+
+# bun completions
+[ -s "/Users/jake/.bun/_bun" ] && source "/Users/jake/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - zsh)"
+
+# proj: quick tmux session per project
+source "$HOME/workspace/proj/proj.zsh"
+
+# Added by tally installer
+export PATH="$HOME/.tally/bin:$PATH"
+{{- else -}}
+# Environment
+if [[ -d "$HOME/bin" ]]; then
+  path=("$HOME/bin" $path)
+  typeset -U path PATH
+fi
+
+# Shell integrations
+command -v starship >/dev/null 2>&1 && eval "$(starship init zsh)"
+
+# SSH compatibility
+ssh() {
+  local arg
+  for arg in "$@"; do
+    case "$arg" in
+      mac-mini|jake@mac-mini)
+        TERM=xterm-256color command ssh "$@"
+        return
+        ;;
+    esac
+  done
+
+  command ssh "$@"
+}
+
+# Node.js
+export NVM_DIR="$HOME/.nvm"
+[[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
+[[ -s "$NVM_DIR/bash_completion" ]] && source "$NVM_DIR/bash_completion"
+{{- end }}
