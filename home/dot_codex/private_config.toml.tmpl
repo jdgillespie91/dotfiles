@@ -1,0 +1,11 @@
+approval_policy = "never"
+approvals_reviewer = "user"
+sandbox_mode = "danger-full-access"
+
+[mcp_servers.openaiDeveloperDocs]
+url = "https://developers.openai.com/mcp"
+{{- range (.codex.trusted_projects | default list) }}
+
+[projects."{{ . }}"]
+trust_level = "trusted"
+{{- end }}
