@@ -1,0 +1,54 @@
+# TOOLS.md
+
+CLI tool inventory for this machine.
+{{- if eq (.tools.profile | default "") "mac-mini" }}
+Installed binaries live across `~/bin`, `~/.local/bin`, and `~/.local/node/bin`.
+Current state verified on 2026-07-13.
+
+| Tool | Description | Help Command | How To Update |
+| --- | --- | --- | --- |
+| `amp` | Sourcegraph Amp coding agent CLI. Installed: `0.0.1774195348-g48946d`. | `amp --help` | Replace `/Users/jake/.local/bin/amp` using Amp's official install/update flow. |
+| `bw` | Bitwarden CLI for vault access. Installed: `2026.3.0`. | `bw --help` | Replace `/Users/jake/.local/bin/bw` from the official Bitwarden CLI macOS release asset. |
+| `chezmoi` | Dotfiles manager for syncing and templating local configuration. Installed: `chezmoi v2.71.0`. | `chezmoi --help` | Replace `/Users/jake/bin/chezmoi` from the latest `twpayne/chezmoi` macOS arm64 release asset or the official installer. |
+| `claude` | Claude Code CLI. Installed: `2.0.59`. | `claude --help` | Update using Claude Code's official installer/update mechanism. |
+| `cloudflared` | Cloudflare Tunnel CLI. Installed: `2026.7.1`. | `cloudflared --help` | Replace `/Users/jake/.local/bin/cloudflared` from Cloudflare's official macOS arm64 release. |
+| `codex` | OpenAI Codex CLI. Installed: `codex-cli 0.142.5`. | `codex --help` | Update the existing Node-based install under `/Users/jake/.local/node/bin`, or replace with OpenAI's current official CLI distribution. |
+| `ffmpeg` | Audio/video conversion and processing toolkit. Installed: `ffmpeg 8.0`. | `ffmpeg -h` | Replace `/Users/jake/.local/bin/ffmpeg` from an official or trusted static macOS arm64 build. |
+| `gh` | GitHub CLI for repositories, issues, pull requests, and auth. Installed: `gh 2.83.2`. | `gh --help` | Replace `/Users/jake/.local/bin/gh` from the latest `cli/cli` macOS arm64 release asset. |
+| `hunk` | Review-first terminal diff viewer and Git pager. Installed: `hunk 0.17.0`. | `hunk --help` | Replace `/Users/jake/bin/hunk` from the latest `modem-dev/hunk` `hunkdiff-darwin-arm64.tar.gz` release asset. |
+| `hurl` | HTTP request runner and API test tool. Installed: `hurl 6.1.1`. | `hurl --help` | Replace `/Users/jake/.local/bin/hurl` and `/Users/jake/.local/bin/hurlfmt` from the latest official Hurl macOS release. |
+| `just` | Command runner for project-specific task recipes. Installed: `just 1.46.0`. | `just --help` | Replace `/Users/jake/.local/bin/just` from the latest `casey/just` macOS arm64 release asset. |
+| `ngrok` | Secure tunnel CLI for exposing local services. Installed: `ngrok 3.34.0`. | `ngrok help` | Replace `/Users/jake/.local/bin/ngrok` from ngrok's official macOS arm64 download. |
+| `node` | JavaScript runtime. Installed: `v24.12.0`. | `node --help` | Replace the Node install under `/Users/jake/.local/node` using the official Node.js macOS arm64 distribution. |
+| `npm` / `npx` | Node package runner and package manager. Installed: `11.6.2`. | `npm help` | Managed with the Node install under `/Users/jake/.local/node`. |
+| `nvim` | Terminal text editor with Lua configuration. Installed: `NVIM v0.12.4`. | `nvim --help` | Replace `/Users/jake/bin/nvim-macos-arm64` from the latest `neovim/neovim` `nvim-macos-arm64.tar.gz` release asset and refresh `/Users/jake/bin/nvim` symlink. |
+| `openacp` | Open Agent Client Protocol CLI. Installed: `openacp v2026.417.2`. | `openacp --help` | Update the existing Node-based install under `/Users/jake/.local/node/bin`. |
+| `rg` | Fast recursive text search tool from ripgrep. Installed: `ripgrep 14.1.1`. | `rg --help` | Replace `/Users/jake/.local/bin/rg` from the latest `BurntSushi/ripgrep` macOS arm64 release asset. |
+| `soft` | Charmbracelet Soft Serve CLI. Installed: `soft v0.11.6`. | `soft --help` | Replace `/Users/jake/.local/bin/soft` from the latest `charmbracelet/soft-serve` macOS arm64 release asset. |
+| `starship` | Cross-shell prompt used by zsh. Installed: `starship 1.24.0`. | `starship --help` | Replace `/Users/jake/.local/bin/starship` from the latest `starship/starship` macOS arm64 release asset. |
+| `tmux` | Terminal multiplexer for persistent sessions, panes, and windows. Installed: `tmux 3.4`. | `tmux -h` | Replace `/Users/jake/.local/bin/tmux` from the latest `tmux/tmux-builds` macOS arm64 release asset. |
+| `uv` / `uvx` | Python package, project, and tool runner. Installed: `uv 0.9.10`. | `uv --help` | Replace `/Users/jake/.local/bin/uv` and `/Users/jake/.local/bin/uvx` from the latest `astral-sh/uv` macOS arm64 release asset. |
+{{- else }}
+Installed binaries live in `~/bin`.
+Current state verified on 2026-07-13.
+
+| Tool | Description | Help Command | How To Update |
+| --- | --- | --- | --- |
+| `bat` | Syntax-highlighting pager for file viewing. Installed: `bat 0.26.1`. | `bat --help` | Replace `/Users/jake/bin/bat` from the latest `sharkdp/bat` macOS arm64 release asset. |
+| `btm` | Terminal system monitor for CPU, memory, disks, and processes. Installed: `bottom 0.12.3`. | `btm --help` | Replace `/Users/jake/bin/btm` from the latest `ClementTsang/bottom` macOS arm64 release asset. |
+| `chezmoi` | Dotfiles manager for syncing and templating local configuration. Installed: `chezmoi v2.70.2`. | `chezmoi --help` | Replace `/Users/jake/bin/chezmoi` from the latest `twpayne/chezmoi` macOS arm64 release asset or the official installer. |
+| `delta` | Syntax-highlighted pager for `git diff`, `git show`, and patch output. Installed: `delta 0.19.2`. | `delta --help` | Replace `/Users/jake/bin/delta` from the latest `dandavison/delta` macOS arm64 release asset. |
+| `fd` | Fast, user-friendly alternative to `find`. Installed: `fd 10.4.2`. | `fd --help` | Replace `/Users/jake/bin/fd` from the latest `sharkdp/fd` macOS arm64 release asset. |
+| `fzf` | Fuzzy finder for shell history, files, and interactive selection. Installed: `fzf 0.71.0`. | `fzf --help` | Replace `/Users/jake/bin/fzf` from the latest `junegunn/fzf` macOS arm64 release asset. |
+| `gh` | GitHub CLI for repositories, issues, pull requests, and auth. Installed: `gh 2.90.0`. | `gh --help` | Replace `/Users/jake/bin/gh` from the latest `cli/cli` macOS arm64 release asset. |
+| `hunk` | Review-first terminal diff viewer and Git pager. Installed: `hunk 0.17.0`. | `hunk --help` | Replace `/Users/jake/bin/hunk` from the latest `modem-dev/hunk` `hunkdiff-darwin-arm64.tar.gz` release asset. |
+| `jq` | Command-line JSON parser and transformer. Installed: `jq 1.8.1`. | `jq --help` | Replace `/Users/jake/bin/jq` from the latest `jqlang/jq` macOS arm64 release asset. |
+| `just` | Command runner for project-specific task recipes. Installed: `just 1.50.0`. | `just --help` | Replace `/Users/jake/bin/just` from the latest `casey/just` macOS arm64 release asset. |
+| `nvim` | Terminal text editor with Lua configuration. Installed: `NVIM v0.12.4`. | `nvim --help` | Replace `/Users/jake/bin/nvim-macos-arm64` from the latest `neovim/neovim` `nvim-macos-arm64.tar.gz` release asset and refresh `/Users/jake/bin/nvim` symlink. |
+| `rg` | Fast recursive text search tool from ripgrep. Installed: `ripgrep 15.1.0`. | `rg --help` | Replace `/Users/jake/bin/rg` from the latest `BurntSushi/ripgrep` macOS arm64 release asset. |
+| `starship` | Cross-shell prompt used by zsh. Installed: `starship 1.25.1`. | `starship --help` | Replace `/Users/jake/bin/starship` from the latest `starship/starship` macOS arm64 release asset. |
+| `tmux` | Terminal multiplexer for persistent sessions, panes, and windows. Installed: `tmux 3.6a`. | `tmux -h` | Replace `/Users/jake/bin/tmux` from the latest `tmux/tmux-builds` macOS arm64 release asset. |
+| `uv` | Python package and project manager with fast virtualenv and tool workflows. Installed: `uv 0.11.7`. | `uv --help` | Replace `/Users/jake/bin/uv` from the latest `astral-sh/uv` macOS arm64 release asset. |
+| `xh` | Friendly HTTP client for APIs and web services. Installed: `xh 0.25.3`. | `xh --help` | Replace `/Users/jake/bin/xh` from the latest `ducaale/xh` macOS arm64 release asset. |
+| `yq` | Command-line YAML, JSON, and structured data processor. Installed: `yq v4.53.2`. | `yq --help` | Replace `/Users/jake/bin/yq` from the latest `mikefarah/yq` macOS arm64 release asset. |
+{{- end }}
