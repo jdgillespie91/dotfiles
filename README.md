@@ -12,8 +12,8 @@ from official release binaries and documented in `~/.codex/TOOLS.md`.
 | --- | --- | --- |
 | `home/dot_zshrc.tmpl` | `~/.zshrc` | machine-specific zsh PATH and shell integrations |
 | `home/dot_gitconfig` | `~/.gitconfig` | Git identity, Hunk pager, diff and merge settings |
-| `home/dot_tmux.conf` | `~/.tmux.conf` | tmux ergonomics, clipboard, Ghostty RGB, Catppuccin status bar |
-| `home/dot_config/ghostty/config` | `~/.config/ghostty/config` | Ghostty Catppuccin theme, JetBrainsMono Nerd Font, Option-as-Alt |
+| `home/dot_tmux.conf` | `~/.tmux.conf` | tmux ergonomics, clipboard, Ghostty RGB, adaptive Catppuccin status bar |
+| `home/dot_config/ghostty/config` | `~/.config/ghostty/config` | Ghostty adaptive Catppuccin theme, JetBrainsMono Nerd Font, Option-as-Alt |
 | `home/dot_config/starship.toml` | `~/.config/starship.toml` | compact prompt: cwd, git branch, prompt character |
 | `home/dot_config/nvim/init.lua` | `~/.config/nvim/init.lua` | Neovim config, plugins, LSP, formatting, linting |
 | `home/dot_codex/AGENTS.md` | `~/.codex/AGENTS.md` | Codex user preferences |
