@@ -29,6 +29,7 @@ over Homebrew. When adding or updating a CLI, update
 
 Current notable manual installs include:
 
+- Docker Desktop app, with `docker` exposed through `~/bin`
 - Ghostty app
 - JetBrains Mono and JetBrainsMono Nerd Font in `~/Library/Fonts`
 - Hunk in `~/bin/hunk`
