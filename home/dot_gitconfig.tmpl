@@ -1,6 +1,10 @@
 [user]
 	name = Jake Gillespie
+{{- if eq (.tools.profile | default "") "work-laptop" }}
 	email = jake@deployorigin.com
+{{- else }}
+	email = jdgillespie91@gmail.com
+{{- end }}
 
 [core]
 	pager = hunk pager
